@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woven Gardens — New Arrivals</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<style>*{font-family:'Inter',sans-serif} html{scroll-behavior:smooth}</style>
+</head>
+<body class="bg-white text-black antialiased">
+<!-- top bar -->
+<div class="w-full bg-black text-white text-[11px] tracking-[0.14em] uppercase text-center py-2.5 font-medium">Free shipping on orders over Rs. 5,000</div>
+<!-- header -->
+<header class="sticky top-0 z-40 bg-white border-b border-[#E5E5E5]">
+  <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 h-[64px] flex items-center justify-between gap-4">
+    <nav class="hidden lg:flex items-center gap-7 text-[12px] tracking-[0.08em] uppercase font-medium">
+      <a href="#">Home</a><a href="#new-arrivals">Shop</a><a href="#">Collections</a><a href="#">About</a>
+    </nav>
+    <button id="menuBtn" class="lg:hidden p-2 -ml-2" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.7"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    <a href="#" class="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:mx-auto text-center">
+      <div class="text-[19px] sm:text-[22px] font-semibold tracking-[0.18em] leading-none">WOVEN GARDENS</div>
+      <div class="hidden sm:block text-[9px] tracking-[0.28em] uppercase text-[#888] mt-0.5">Handmade Bags</div>
+    </a>
+    <div class="flex items-center gap-1 sm:gap-4">
+      <button class="hidden sm:grid place-items-center size-9 hover:bg-black/5 rounded-full"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.2-3.2"/></svg></button>
+      <button class="hidden sm:grid place-items-center size-9 hover:bg-black/5 rounded-full"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M4 19c0-3.5 3.5-5.5 8-5.5s8 2 8 5.5"/></svg></button>
+      <button id="cartBtn" class="relative flex items-center gap-1.5"><span class="hidden sm:inline text-[12px] tracking-[0.08em] uppercase font-medium">Cart</span><span class="relative"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.6"><path d="M6 7h12l-1 9H7L6 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg><span id="cartCount" class="absolute -top-2 -right-2 bg-black text-white text-[10px] min-w-[16px] h-[16px] rounded-full grid place-items-center px-1">0</span></span></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-[#E5E5E5] bg-white px-6 py-5 space-y-3 text-[13px] tracking-[0.08em] uppercase font-medium">
+    <a href="#" class="block py-2 border-b border-[#F0F0F0]">Home</a><a href="#new-arrivals" class="block py-2 border-b border-[#F0F0F0]">Shop</a><a href="#" class="block py-2 border-b border-[#F0F0F0]">Collections</a><a href="#" class="block py-2">About</a>
+  </div>
+</header>
+
+<!-- HERO - uses your exact image.png 2K collage (mint background with all provided bags) -->
+<section class="bg-[#A8CFBB] py-0">
+  <div class="max-w-[1440px] mx-auto">
+    <img src="image.png" alt="Woven Gardens - Affordable Bags Collection" class="w-full h-auto block">
+  </div>
+</section>
+
+<!-- NEW ARRIVALS + BEST SELLER - big minimal premium cards like screenshot - NO hover - uses ONLY provided images -->
+<section id="new-arrivals" class="py-10 sm:py-14 bg-white">
+  <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-center text-[22px] sm:text-[28px] font-semibold tracking-[0.01em]">New Arrivals</h2>
+    <div class="mt-8 sm:mt-10 grid grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-10">
+      <a href="#" class="block text-center group">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full leading-none">ON SALE</span>
+          <img src="541599104_18045271628651918_4208545351597533665_n.jpg" alt="Aveline - Suede Brown" class="w-full h-full object-contain p-2 sm:p-4">
+        </div>
+        <div class="pt-5">
+          <div class="text-[12px] sm:text-[13px] font-medium leading-tight">Aveline – Suede Brown</div>
+          <div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.3,799.00</span><span class="text-[#9A9A9A] line-through">Rs.4,999.00</span></div>
+        </div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full leading-none">ON SALE</span>
+          <img src="645958959_17917458846295719_3761937659053148565_n.jpg" alt="Aveline - Suede Maroon" class="w-full h-full object-contain p-2 sm:p-4">
+        </div>
+        <div class="pt-5">
+          <div class="text-[12px] sm:text-[13px] font-medium leading-tight">Aveline – Suede Maroon</div>
+          <div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.3,799.00</span><span class="text-[#9A9A9A] line-through">Rs.4,999.00</span></div>
+        </div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full leading-none">ON SALE</span>
+          <img src="700253147_1015914917671951_7552029036122680794_n.jpg" alt="Aveline - PU Leather Skin" class="w-full h-full object-contain p-2 sm:p-4">
+        </div>
+        <div class="pt-5">
+          <div class="text-[12px] sm:text-[13px] font-medium leading-tight">Aveline – PU Leather Skin</div>
+          <div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.3,499.00</span><span class="text-[#9A9A9A] line-through">Rs.4,999.00</span></div>
+        </div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full leading-none">ON SALE</span>
+          <img src="662278413_18580510786052665_1067068944403029616_n.jpg" alt="Aveline - PU Leather Black" class="w-full h-full object-contain p-2 sm:p-4">
+        </div>
+        <div class="pt-5">
+          <div class="text-[12px] sm:text-[13px] font-medium leading-tight">Aveline – PU Leather Black</div>
+          <div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.3,499.00</span><span class="text-[#9A9A9A] line-through">Rs.4,999.00</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- BEST SELLER - big minimal premium cards - exactly like screenshot -->
+<section id="best-seller" class="py-10 sm:py-14 bg-white border-t border-[#F0F0F0]">
+  <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-center text-[22px] sm:text-[28px] font-semibold tracking-[0.01em]">Best Seller</h2>
+    <div class="mt-8 sm:mt-10 grid grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 sm:gap-y-10">
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full leading-none">ON SALE</span>
+          <img src="541599104_18045271628651918_4208545351597533665_n.jpg" class="w-full h-full object-contain p-2 sm:p-6">
+        </div>
+        <div class="pt-5">
+          <div class="text-[12px] sm:text-[13px] font-medium leading-tight">Nova – Dark Brown</div>
+          <div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.2,849.00</span><span class="text-[#9A9A9A] line-through">Rs.3,999.00</span></div>
+        </div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full leading-none">ON SALE</span>
+          <img src="645958959_17917458846295719_3761937659053148565_n.jpg" class="w-full h-full object-contain p-2 sm:p-6">
+        </div>
+        <div class="pt-5">
+          <div class="text-[12px] sm:text-[13px] font-medium leading-tight">Sienna Tote (Free Makeup Pouch) – Maroon</div>
+          <div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.2,499.00</span><span class="text-[#9A9A9A] line-through">Rs.5,999.00</span></div>
+        </div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full leading-none">ON SALE</span>
+          <img src="686506127_18074127512651918_7495763837918149835_n.jpg" class="w-full h-full object-contain p-2 sm:p-6">
+        </div>
+        <div class="pt-5">
+          <div class="text-[12px] sm:text-[13px] font-medium leading-tight">Amour – Cherry Red</div>
+          <div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.2,799.00</span><span class="text-[#9A9A9A] line-through">Rs.3,999.00</span></div>
+        </div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full leading-none">ON SALE</span>
+          <img src="700253147_1015914917671951_7552029036122680794_n.jpg" class="w-full h-full object-contain p-2 sm:p-6">
+        </div>
+        <div class="pt-5">
+          <div class="text-[12px] sm:text-[13px] font-medium leading-tight">Nova – Skin</div>
+          <div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.2,849.00</span><span class="text-[#9A9A9A] line-through">Rs.3,999.00</span></div>
+        </div>
+      </a>
+    </div>
+    <!-- second row of Best Seller - using remaining provided images with same big premium style -->
+    <div class="mt-8 sm:mt-10 grid grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8">
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full">ON SALE</span>
+          <img src="656309237_18091887761279245_75723994761288697_n.jpg" class="w-full h-full object-contain p-2 sm:p-6">
+        </div>
+        <div class="pt-5"><div class="text-[12px] sm:text-[13px] font-medium">Woven Tote – Noir Stripe</div><div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.3,499.00</span><span class="text-[#9A9A9A] line-through">Rs.4,500.00</span></div></div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full">ON SALE</span>
+          <img src="657252012_18095100584037684_3483696956687033678_n.jpg" class="w-full h-full object-contain p-2 sm:p-6">
+        </div>
+        <div class="pt-5"><div class="text-[12px] sm:text-[13px] font-medium">Ridge Quilt Tote – Ash</div><div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.3,299.00</span><span class="text-[#9A9A9A] line-through">Rs.4,200.00</span></div></div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full">ON SALE</span>
+          <img src="662278413_18580510786052665_1067068944403029616_n.jpg" class="w-full h-full object-contain p-2 sm:p-6">
+        </div>
+        <div class="pt-5"><div class="text-[12px] sm:text-[13px] font-medium">Amour – Chocolate</div><div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.2,799.00</span><span class="text-[#9A9A9A] line-through">Rs.3,999.00</span></div></div>
+      </a>
+      <a href="#" class="block text-center">
+        <div class="relative bg-white aspect-[1/0.95] overflow-hidden">
+          <span class="absolute top-3 left-3 bg-[#E53935] text-white text-[9px] sm:text-[10px] font-bold tracking-[0.05em] uppercase px-2.5 py-1 rounded-full">ON SALE</span>
+          <img src="669997866_26559058997081786_8135442570458067301_n.jpg" class="w-full h-full object-contain p-2 sm:p-6">
+        </div>
+        <div class="pt-5"><div class="text-[12px] sm:text-[13px] font-medium">Ocean Stripe Sleeve</div><div class="mt-1.5 flex items-center justify-center gap-2 text-[11px] sm:text-[12px]"><span class="font-medium">Rs.2,999.00</span><span class="text-[#9A9A9A] line-through">Rs.3,999.00</span></div></div>
+      </a>
+    </div>
+    <div class="mt-10 text-center"><a href="#" class="inline-flex items-center justify-center border border-black text-[12px] tracking-[0.12em] uppercase font-medium px-8 h-[42px]">View All</a></div>
+  </div>
+</section>
+
+<footer class="border-t border-[#E5E5E5] bg-white">
+  <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 text-sm">
+      <div class="col-span-2 sm:col-span-1"><div class="text-[14px] font-semibold tracking-[0.16em]">WOVEN GARDENS</div><p class="text-[13px] leading-relaxed text-[#666] mt-3 max-w-[260px]">Minimal, handcrafted bags made slowly in small batches.</p></div>
+      <div><div class="text-[11px] tracking-[0.14em] uppercase font-semibold">Shop</div><ul class="mt-3 space-y-2 text-[13px] text-[#444]"><li><a href="#">New Arrivals</a></li><li><a href="#">Best Sellers</a></li><li><a href="#">Sale</a></li></ul></div>
+      <div><div class="text-[11px] tracking-[0.14em] uppercase font-semibold">Help</div><ul class="mt-3 space-y-2 text-[13px] text-[#444]"><li><a href="#">Shipping & Returns</a></li><li><a href="#">Contact</a></li></ul></div>
+      <div><div class="text-[11px] tracking-[0.14em] uppercase font-semibold">Newsletter</div><form id="newsletter" class="mt-3 flex"><input type="email" placeholder="Email address" required class="flex-1 h-9 border border-black px-3 text-[13px] outline-none"><button class="h-9 px-4 bg-black text-white text-[11px] tracking-[0.12em] uppercase font-medium">Join</button></form></div>
+    </div>
+    <div class="mt-10 pt-6 border-t border-[#E5E5E5] flex flex-col sm:flex-row gap-3 justify-between text-[11px] tracking-[0.08em] uppercase text-[#888]"><span>© 2026 Woven Gardens</span><span>Pakistan • Worldwide shipping</span></div>
+  </div>
+</footer>
+
+<!-- cart drawer minimal -->
+<div id="drawerOverlay" class="fixed inset-0 bg-black/40 opacity-0 pointer-events-none transition z-50"></div>
+<div id="cartDrawer" class="fixed top-0 right-0 h-full w-[360px] max-w-[92vw] bg-white border-l border-[#E5E5E5] translate-x-full transition duration-300 z-50 flex flex-col">
+  <div class="h-[64px] flex items-center justify-between px-6 border-b border-[#E5E5E5]"><div class="text-sm font-semibold tracking-[0.08em] uppercase">Cart <span id="drawerCount" class="text-[#888] font-normal">(0)</span></div><button id="closeDrawer" class="size-8 grid place-items-center border border-[#E5E5E5]">✕</button></div>
+  <div id="cartItems" class="flex-1 overflow-auto p-6"><div id="emptyCart" class="text-center py-12 text-sm text-[#888]">Your cart is empty</div></div>
+  <div class="p-6 border-t border-[#E5E5E5]"><div class="flex justify-between text-sm"><span>Subtotal</span><span id="subtotal" class="font-semibold">Rs.0</span></div><button id="checkoutBtn" class="w-full mt-4 h-11 bg-black text-white text-[12px] tracking-[0.12em] uppercase font-medium">Checkout</button></div>
+</div>
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-black text-white text-sm px-5 py-3 opacity-0 pointer-events-none transition z-50"></div>
+<script>
+let cart=[];
+const catalog=[
+ {name:"Aveline – Suede Brown",price:3799,img:"541599104_18045271628651918_4208545351597533665_n.jpg"},
+ {name:"Aveline – Suede Maroon",price:3799,img:"645958959_17917458846295719_3761937659053148565_n.jpg"},
+ {name:"Aveline – PU Leather Skin",price:3499,img:"700253147_1015914917671951_7552029036122680794_n.jpg"},
+ {name:"Aveline – PU Leather Black",price:3499,img:"662278413_18580510786052665_1067068944403029616_n.jpg"},
+ {name:"Nova – Dark Brown",price:2849,img:"541599104_18045271628651918_4208545351597533665_n.jpg"},
+ {name:"Sienna Tote (Free Makeup Pouch) – Maroon",price:2499,img:"645958959_17917458846295719_3761937659053148565_n.jpg"},
+ {name:"Amour – Cherry Red",price:2799,img:"686506127_18074127512651918_7495763837918149835_n.jpg"},
+ {name:"Nova – Skin",price:2849,img:"700253147_1015914917671951_7552029036122680794_n.jpg"},
+ {name:"Woven Tote – Noir Stripe",price:3499,img:"656309237_18091887761279245_75723994761288697_n.jpg"},
+ {name:"Ridge Quilt Tote – Ash",price:3299,img:"657252012_18095100584037684_3483696956687033678_n.jpg"},
+ {name:"Amour – Chocolate",price:2799,img:"662278413_18580510786052665_1067068944403029616_n.jpg"},
+ {name:"Ocean Stripe Sleeve",price:2999,img:"669997866_26559058997081786_8135442570458067301_n.jpg"},
+];
+function updateCart(){
+ const count=cart.reduce((s,c)=>s+c.qty,0);
+ document.getElementById('cartCount').textContent=count;
+ document.getElementById('drawerCount').textContent=`(${count})`;
+ document.getElementById('subtotal').textContent='Rs.'+cart.reduce((s,c)=>s+c.price*c.qty,0).toLocaleString();
+ const wrap=document.getElementById('cartItems');
+ wrap.querySelectorAll('.cart-row').forEach(e=>e.remove());
+ document.getElementById('emptyCart').style.display=count===0?'block':'none';
+ cart.forEach(it=>{
+  const row=document.createElement('div');
+  row.className='cart-row flex gap-3 py-3 border-b border-[#F0F0F0]';
+  row.innerHTML=`<img src="${it.img}" class="size-16 object-cover bg-[#F9F9F9] border border-[#F0F0F0]"><div class="flex-1"><div class="text-[13px] font-medium leading-tight">${it.name}</div><div class="text-xs text-[#666]">Rs.${it.price.toLocaleString()} × ${it.qty}</div><div class="flex gap-2 mt-2"><button onclick="changeQty('${it.name}',-1)" class="size-6 border grid place-items-center text-xs">−</button><span class="text-xs px-1">${it.qty}</span><button onclick="changeQty('${it.name}',1)" class="size-6 border grid place-items-center text-xs">+</button></div></div>`;
+  wrap.appendChild(row);
+ });
+}
+function changeQty(name,d){const it=cart.find(c=>c.name===name); if(!it) return; it.qty+=d; if(it.qty<=0) cart=cart.filter(c=>c.name!==name); updateCart();}
+function addByName(name){const p=catalog.find(x=>x.name===name); if(!p) return; const ex=cart.find(c=>c.name===name); if(ex) ex.qty++; else cart.push({...p,qty:1}); updateCart(); openCart(); showToast(name+' added');}
+document.querySelectorAll('#new-arrivals a, #best-seller a').forEach(a=>{const t=a.querySelector('div.pt-5 div')?.textContent?.trim(); if(t) a.addEventListener('click',e=>{e.preventDefault(); addByName(t);});});
+function showToast(m){const t=document.getElementById('toast'); t.textContent=m; t.style.opacity='1'; setTimeout(()=>t.style.opacity='0',1800);}
+const drawer=document.getElementById('cartDrawer'), overlay=document.getElementById('drawerOverlay');
+function openCart(){drawer.style.transform='translateX(0)'; overlay.style.opacity='1'; overlay.style.pointerEvents='auto';}
+function closeCart(){drawer.style.transform='translateX(100%)'; overlay.style.opacity='0'; overlay.style.pointerEvents='none';}
+document.getElementById('cartBtn').addEventListener('click',openCart);
+document.getElementById('closeDrawer').addEventListener('click',closeCart);
+overlay.addEventListener('click',closeCart);
+document.getElementById('checkoutBtn').addEventListener('click',()=>{ if(!cart.length) showToast('Cart is empty'); else { showToast('Order placed'); cart=[]; updateCart(); closeCart();}});
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('hidden'));
+document.getElementById('newsletter').addEventListener('submit',e=>{e.preventDefault(); e.target.reset(); showToast('Thanks for subscribing');});
+</script>
+</body>
+</html>
